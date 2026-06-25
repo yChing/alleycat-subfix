@@ -1,0 +1,40 @@
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ===== 使用者設定 / 機密(切勿提交 API 金鑰!) =====
+.alleycat_config.txt
+.alleycat_config.json
+.alleycat_config_recommended.txt
+.alleycat_config_custom.txt
+*.key
+*_secret*
+secrets.*
+
+# ===== 字幕備份 / 匯出產物 =====
+AlleyCat_Backups/
+*_Backups/
+AlleyCat_匯出_*.srt
+AlleyCat_雙語_*.srt
+*.bak
+
+# ===== 打包暫存 =====
+build/
+dist/
+*.pkg.tmp
+flat/
+Payload
+Bom
+PackageInfo
+
+# ===== 編輯器 / 系統暫存 =====
+*.swp
+*~
+.idea/
+.vscode/
+*.log
