@@ -114,11 +114,12 @@ AI 功能(完整糾錯、的得專項、中英翻譯)需要自備一組 LLM API 
 - **Gemini(若你別處已有金鑰,可直接重用)**:引擎選 Google Gemini、模型 `gemini-2.5-flash`、Key 貼 Google AI Studio 的金鑰。免費級約每天 1,500 次、每分鐘 15 次,個人字幕用通常免費就夠;要更好改 `gemini-2.5-pro`(需在 Google 專案開啟計費)。
 - **Claude**:用「自訂(OpenAI 相容)」引擎,API 填 `https://api.anthropic.com/v1/chat/completions`、模型 `claude-sonnet-4-6`(或 `claude-haiku-4-5` 省錢)、Key 為 console.anthropic.com 的 API 金鑰。
 - **SiliconFlow 換模型**:只改「模型」欄即可,API 與 Key 不動;模型 ID 是「廠商/模型名」格式,去它模型廣場用「複製模型名稱」貼上最準。
+- **GLM-5.2(智譜 / Z.ai)**:可經 SiliconFlow 引擎填模型 ID(如 `zai-org/GLM-5.2`),或用「自訂(OpenAI 相容)」填模型 `glm-5.2` + 端點 `https://open.bigmodel.cn/api/paas/v4/chat/completions`、Key 用 bigmodel.cn / z.ai 申請。新用戶 bigmodel.cn 約有 2,000 萬 token 免費額度。價格約 $1.40 / $4.40(每百萬輸入/輸出)。⚠️ GLM 同為中國模型,政治敏感內容的審查與資料疑慮與 DeepSeek 相同,不適合作為「避審查」用途。
 
 **選哪個模型 / 敏感內容注意(台灣創作者特別看):**
 
 - 日常、非政治內容:DeepSeek 最便宜好用,「台灣」一詞本身**不會**被擋。
-- **政治/敏感題材(台灣主權、兩岸、六四、批評中共等):建議改用 Gemini 或 Claude。** DeepSeek 是中國模型,會依中國法規對這類「主題」做審查——可能拒答(該行會自動保留原文),或更麻煩地把用詞改成北京立場。而且送往 `api.deepseek.com` 的內容會傳到中國伺服器。Gemini / Claude 無此政治過濾、資料也不進中國。
+- **政治/敏感題材(台灣主權、兩岸、六四、批評中共等):建議改用 Gemini 或 Claude。** DeepSeek、GLM 等中國模型會依中國法規對這類「主題」做審查——可能拒答(該行會自動保留原文),或更麻煩地把用詞改成北京立場。而且送往 `api.deepseek.com` 的內容會傳到中國伺服器。Gemini / Claude 無此政治過濾、資料也不進中國。
 - 換模型只需改「AI 配置」一格,可日常用 DeepSeek、敏感題材臨時切 Gemini/Claude。
 
 **金鑰儲存位置(僅存於你本機):**
